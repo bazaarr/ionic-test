@@ -7,11 +7,11 @@ dependencies:
     post:
       - npm install -g gulp
       - bower install
+      - npm install -g cordova ionic
     cache_directories:
       - /home/ubuntu/nvm/versions/node/v0.12.6
 deployment:
     staging:
       branch: master
       commands:
-        - npm install -g cordova ionic
         - ionic upload --email $IONIC_EMAIL --password $IONIC_PASSWORD
