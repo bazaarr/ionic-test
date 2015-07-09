@@ -6,11 +6,10 @@ machine:
 dependencies:
     cache_directories:
       - "node_modules"
-    post:
-      - npm install -g gulp
-      - bower install
-      - npm install -g cordova ionic
-
+#    post:
+#      - npm install -g gulp
+#      - bower install
+#      - npm install -g cordova ionic
 deployment:
     staging:
       branch: master
