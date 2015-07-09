@@ -4,12 +4,13 @@ machine:
   ruby:
     version: 2.1.2
 dependencies:
+    cache_directories:
+      - "node_modules"
     post:
       - npm install -g gulp
       - bower install
       - npm install -g cordova ionic
-    cache_directories:
-      - /home/ubuntu/nvm/versions/node/v0.12.6
+
 deployment:
     staging:
       branch: master
