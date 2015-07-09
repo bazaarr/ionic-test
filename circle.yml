@@ -5,8 +5,10 @@ machine:
     version: 2.1.2
 dependencies:
     post:
-    - npm install -g gulp
-    - bower install
+      - npm install -g gulp
+      - bower install
+    cache_directories:
+      - /home/ubuntu/nvm/versions/node/v0.12.6
 deployment:
     staging:
       branch: master
